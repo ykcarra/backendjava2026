@@ -23,7 +23,7 @@ public class ContraseniaStreaming extends Contrasenia {
 
     @Override
     public String getDetalleEspecifico(){
-        return "El numero de usuarios es: " + cantidadUsuarios + " en la familia";
+        return "El numero de usuarios es, " + cantidadUsuarios + " en la familia";
     }
 
     public String nroTelFamiliarAdministrador(){

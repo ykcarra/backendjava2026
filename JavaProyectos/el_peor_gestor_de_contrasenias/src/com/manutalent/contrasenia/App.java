@@ -97,12 +97,12 @@ public class App {
 			ArrayList<Contrasenia> contrasenias,
 			ArrayList<Categoria> categorias) {
 		System.out.println("\n--- INGRESAR CONTRASEÑA ---");
-		System.out.println("1 - Contrasena de Streaming");
-		System.out.println("2 - Contraseña Bancaria");
+		System.out.println(" 1 - Contrasena de Streaming ");
+		System.out.println(" 2 - Contraseña Bancaria ");
 
 		int tipo;
 		do {
-			tipo = leerEntero(scanner, "Seleccione el tipo de contraseña: ");
+			tipo = leerEntero(scanner, " Seleccione el tipo de contraseña: ");
 
 			if (tipo != 1 && tipo != 2) {
 				System.out.println("Error: debe elegir 1 o 2.");
@@ -110,7 +110,7 @@ public class App {
 
 		} while (tipo != 1 && tipo != 2);
 
-		int codigo = leerEntero(scanner, "Ingrese el código a asignar de la contraseña: ");
+		int codigo = leerEntero(scanner, "Ingrese el id de la contraseña (codigo numerico): ");
 
 
 		if (buscarContraseniaPorCodigo(contrasenias, codigo) != null) {
@@ -145,7 +145,7 @@ public class App {
 
 		contrasenias.add(contrasenia);
 
-		System.out.println("Contraseña ingresada correctamente.");
+		System.out.println(" -> Contraseña ingresada correctamente.");
 		System.out.println("Resumen del objeto creado:");
 		System.out.println(contrasenia);
 	}
@@ -240,7 +240,7 @@ public class App {
         }
 
         String nuevoNombre = leerTextoNoVacio(scanner, "Ingrese el nuevo nombre de la contraseña: ");
-        int nuevoPassword = leerEnteroNoNegativo(scanner,"Ingrese la nueva contraseña");
+        int nuevoPassword = leerEnteroNoNegativo(scanner,"Ingrese la nueva contraseña: ");
 
         listarCategorias(categorias);
         Categoria nuevaCategoria = pedirCategoriaExistente(scanner, categorias);
@@ -266,7 +266,7 @@ public class App {
             streaming.setCantidadUsuarios(nuevosUsuarios);
         }
 
-        System.out.println("Artículo modificado correctamente.");
+        System.out.println("Contraseña modificada correctamente.");
     }
 
 

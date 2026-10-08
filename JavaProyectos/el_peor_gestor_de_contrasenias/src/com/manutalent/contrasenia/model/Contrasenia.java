@@ -64,12 +64,12 @@ public abstract class Contrasenia extends Object {
     @Override
     public String toString(){
         return "Contrasenia{" +
-               "codigo=" + codigo +
-               ", nombre='" + nombre + '\'' +
-               ", password=" + password +
+               " \n codigo = " + codigo +
+               ", \n nombre ='" + nombre + '\'' +
+               ", \n password =" + password +
                //", categoria='" + categoria.getNombre() + '\'' +
-               ", tipo='" + this.getTipoContrasenia() + '\'' +
-               ", detalle='" + this.getDetalleEspecifico() + '\'' +        
+               ", \n tipo ='" + this.getTipoContrasenia() + '\'' +
+               ", \n detalle ='" + this.getDetalleEspecifico() + '\'' +        
                '}';
     }
 
