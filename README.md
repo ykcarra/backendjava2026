@@ -1,1 +1,3 @@
 Pre-entrega: Proyecto JAVA-BE-2026, La idea fue usar como inspiración un CRUD de artículos para hacer un gestor de contraseñas (MALO). Existen categorías y las contraseñas pueden ser Bancarias o de Streaming
+
+Manuel_Carracedo_Pre_Entrega_Java_26223
